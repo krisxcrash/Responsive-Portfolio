@@ -1,0 +1,427 @@
+/* I chose to keep all additional colors grey so the theme 
+would look cleaner as I did not like the colors populated on 
+Adobe Kuler with this theme */
+
+body {
+	background-image: url("../images/nice_snow.png");
+	color:#777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	padding: 25px 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+h2, h3 {
+	color: #4aaaa5;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.65em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+p {
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 1em;
+}
+
+/* LINKS */
+
+a:link {
+	text-decoration: none;
+	color: #cccccc;
+}
+
+a:hover {
+	color: #666666;
+	font-weight: bold;
+}
+
+a:active {
+	color: #333333;
+}
+
+a:visited {
+	color: #666666;
+}
+
+.container {
+	width: 960px;
+	height: 1020px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+#about,
+#connect {
+	float: left;
+}
+
+/* HEADING & NAVBAR */
+
+#header {
+	background: #ffffff;
+	border-bottom: 2px solid #cccccc;
+	display: inline-flex;
+	width: 100%;
+	padding: 0 150px; 
+	position: fixed;
+}
+
+#name {
+	text-align: center;
+	background: #4aaaa5;
+	color: #ffffff;
+	width: 300px;
+	white-space: nowrap;
+}
+
+#navbar {
+	background: #ffffff;
+	float: right;
+	padding-left: 400px;
+	padding-top: 25px;
+}
+
+#navbar li {
+	text-align: right;
+	position: static;
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 10px;
+}
+
+#heading a,
+#heading a:visited,
+#heading a:hover,
+#heading a:link {
+	color: #ffffff;
+}
+
+
+/* CONTENT */
+
+
+.border {
+	border-left: 1px solid #dddddd;
+	padding-bottom: 25px;
+}
+
+.title {
+	border-bottom: 2px solid #cccccc;
+	margin: 25px;
+	padding-bottom: 25px;
+}
+
+#portfolio,
+#contact,
+#about {
+	padding: 25px;
+}
+#bioimage {
+	width: 30%;
+	float: left;
+	padding-right: 25px;
+}
+
+#content,
+#connect {
+	float: left;
+}
+
+#content {
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	line-height: 150%;
+	margin: 50px 0 0 0;
+	width: 650px;
+	overflow: auto;
+	padding-right: 0px;
+}
+
+#connect {
+	border: 1px solid #dddddd;
+	background: #ffffff;
+	display: inline;
+	margin: 50px;
+	width: 270px;
+	clear: none;
+}
+
+#about,
+#connectsect {
+	float: right;
+	margin: 0 5px 5px 5px;
+}
+
+#connectsect {
+	width: 270px;
+}
+
+.social {
+	width: 20%;
+	float: left;
+	padding: 0 0 25px 25px;
+	display: inline;
+}
+
+/* CONTACT PAGE */
+
+input {
+	font-size: 12px;
+	color: #cccccc;
+	width: 100%;
+	line-height: 180%;
+
+}
+
+
+#message {
+	height: 200px;
+	margin-bottom: 25px;
+}
+
+#message:focus {
+	background: url("../images/unicorn.jpg");
+	color: #000000;
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#submit {
+	font-size: 1em;
+	width: 20%;
+	background: #4aaaa5;
+	color: #ffffff;
+	border: 1px solid #cccccc;
+	padding: 5px; 
+}
+
+/* PORTFOLIO PAGE */
+
+.portfolioTitle {
+	text-align: center;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	margin-top: 70%;
+	padding:5% 0;
+	opacity: 0.6;
+}	
+
+.pics {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 20px 45px;
+}
+
+.pics a {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.pics a:hover {
+	text-decoration: none;
+	color: #666666;
+	font-weight: normal;
+}
+
+
+
+#p1 {
+	background-image: url("../images/200x200.png");
+}
+
+#p2 {
+	background-image: url("../images/200x200.png");
+}
+
+#p3 {
+	background-image: url("../images/200x200.png");
+}
+
+#p4 {
+	background-image: url("../images/200x200.png");
+}
+
+#p5 {
+	background-image: url("../images/200x200.png");
+}
+
+#p1:hover,
+#p2:hover,
+#p3:hover,
+#p4:hover,
+#p5:hover {
+	filter: invert(1);
+}
+
+
+/* FOOTER */
+
+footer {
+	font-size: .75em;
+	text-align: center;
+	color: #dddddd;
+	background: #666666;
+	border-top: 5px solid #4aaaa5;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	padding: 25px 0;
+}
+
+/* MEDIA QUERIES */
+
+/* ABOUT PAGE */
+
+@media screen and (max-width: 980px) {
+	#header {
+		margin: 0 auto;
+		width: 100%;
+	}
+	#navbar {
+		position: relative;
+		float: left;
+		width: 100%
+	}
+	.container {
+		width: 100%;
+	}
+	#content,
+	#connect {
+		margin: 50px;
+		width: 90%;
+		clear:both;
+	}
+	#content {
+		width: 100%;
+	}
+	#connectsect {
+		float: left;
+		width: 80%;
+		margin: 0 auto;
+
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#header {
+		margin: 0 auto;
+		width: 100%;
+		padding: 0 20px;
+	}
+	#navbar {
+		position: relative;
+		float: left;
+		width: 100%
+	}
+	.container {
+		width: 90%;
+	}
+	#content,
+	#connect {
+		margin: 50px;
+		width: 90%;
+		clear:both;
+	}
+	#content {
+		width: 100%;
+	}
+	#connectsect {
+		float: left;
+		width: 60%;
+		margin: 0 auto;
+
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#header {
+		margin: 0 auto;
+		width: 100%;
+		padding: 0 20px;
+	}
+	#navbar {
+		position: relative;
+		float: left;
+		width: 100%
+	}
+	.container {
+		width: 100%;
+	}
+	#content,
+	#connect {
+		margin: 50px;
+		width: 90%;
+		clear:both;
+	}
+	#content {
+		width: 100%;
+	}
+	#connectsect {
+		float: left;
+		width: 80%;
+		margin: 0 auto;
+
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#header {
+		margin: 0 auto;
+		width: 100%;
+		padding: 0 10px;
+	}
+	#name {
+		margin: 0 auto;
+	}
+	#navbar {
+		position: relative;
+		display: block;
+		float: left;
+		width: 60%
+	}
+	.container {
+		width: 100%;
+	}
+	#content,
+	#connect {
+		margin: 50px;
+		width: 90%;
+		clear:both;
+	}
+	#content {
+		width: 90%;
+	}
+	#connectsect {
+		float: left;
+		width: 60%;
+		margin: 0 auto;
+
+	}
+
+/* Portfolio */
+	.pics {
+		width: 80%;
+		height: 80%;
+	}
+}
