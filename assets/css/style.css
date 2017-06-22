@@ -303,6 +303,11 @@ footer {
 		float: left;
 		width: 100%
 	}
+
+	#navbar li {
+		margin-right: 50px;
+	}
+
 	.container {
 		width: 100%;
 	}
@@ -321,7 +326,7 @@ footer {
 		margin: 0 auto;
 
 	}
-}
+
 
 @media screen and (max-width: 768px) {
 	#header {
@@ -332,7 +337,8 @@ footer {
 	#navbar {
 		position: relative;
 		float: left;
-		width: 100%
+		width: 100%;
+		padding: 25px 0 0 0;
 	}
 	.container {
 		width: 90%;
@@ -340,38 +346,7 @@ footer {
 	#content,
 	#connect {
 		margin: 50px;
-		width: 90%;
-		clear:both;
-	}
-	#content {
-		width: 100%;
-	}
-	#connectsect {
-		float: left;
-		width: 60%;
-		margin: 0 auto;
-
-	}
-}
-
-@media screen and (max-width: 640px) {
-	#header {
-		margin: 0 auto;
-		width: 100%;
-		padding: 0 20px;
-	}
-	#navbar {
-		position: relative;
-		float: left;
-		width: 100%
-	}
-	.container {
-		width: 100%;
-	}
-	#content,
-	#connect {
-		margin: 50px;
-		width: 90%;
+		width: 80%;
 		clear:both;
 	}
 	#content {
@@ -383,7 +358,62 @@ footer {
 		margin: 0 auto;
 
 	}
-}
+
+/* Portfolio */
+	.pics {
+		width: 80%;
+		height: 80%;
+	}
+
+@media screen and (max-width: 640px) {
+	#header {
+		margin: 0 auto;
+		width: 100%;
+		padding: 0 20px;
+	}
+	#bioimage {
+		width: 90%;
+
+	}
+
+	#navbar {
+		position: relative;
+		float: left;
+		width: 100%
+		padding: 0;
+	}
+
+	#navbar li {
+		display: block;
+		margin-right: 50px;
+	}
+
+	.container {
+		width: 100%;
+	}
+	#content,
+	#connect {
+		margin: 50px;
+		width: 90%;
+		clear:both;
+	}
+	#content {
+		width: 100%;
+	}
+	#connectsect {
+		float: left;
+		width: 100%;
+		margin: 0 auto;
+		padding: 25px;
+
+	}
+
+/* Portfolio */
+	.pics {
+		width: 80%;
+		height: 80%;
+	}
+
 
 @media screen and (max-width: 480px) {
 	#header {
@@ -395,10 +425,18 @@ footer {
 		margin: 0 auto;
 	}
 	#navbar {
-		position: relative;
-		display: block;
 		float: left;
-		width: 60%
+		width: 100%;
+		padding-left: 0;
+	}
+
+	#navbar li {
+		display: block;
+		margin-right: 10px;
+	}
+
+	#bioimage {
+		width: 100%;
 	}
 	.container {
 		width: 100%;
@@ -414,8 +452,9 @@ footer {
 	}
 	#connectsect {
 		float: left;
-		width: 60%;
+		width: 100%;
 		margin: 0 auto;
+		padding: 15px;
 
 	}
 
@@ -424,4 +463,3 @@ footer {
 		width: 80%;
 		height: 80%;
 	}
-}
